@@ -1,30 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Álgebra Lineal</title>
-    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolución de Sistemas de Ecuaciones Lineales</title>
+    <link rel="stylesheet" href="./estilos/estilo.css">
 </head>
 <body>
-    <h1>Álgebra Lineal</h1>
-
-    <!-- Menú de Selección -->
-    <div id="menu">
-        <label for="operation">Selecciona la operación:</label>
-        <select id="operation" onchange="selectOperation()">
-            <option value="">--Selecciona--</option>
-            <option value="matrix-multiplication">Multiplicación de Matrices</option>
-            <option value="determinant-calculation">Cálculo de Determinante</option>
-            <option value="matrix-inverse">Inversa de una Matriz</option>
-            <option value="linear-system-solver">Resolución de Sistemas Lineales</option>
-        </select>
+    <div class="container">
+        <h1>Sistemas de Ecuaciones Lineales</h1>
+        <div class="form-section">
+            <label for="numEcuaciones">Número de ecuaciones:</label>
+            <input type="number" id="numEcuaciones" min="2" max="10" placeholder="2">
+            <button id="generarMatriz">Generar Matriz</button>
+            <button id="verHistorial">Historial</button>
+        </div>
+        <div id="matrizContainer"></div>
+        <div id="resultado"></div>
+        <div id="botonesAccion" style="display: none;">
+            <button id="resolver">Resolver</button>
+            <button id="reiniciar">Reiniciar</button>
+        </div>
+        <div id="historial" style="display: none;"></div>
     </div>
-
-    <!-- Contenedor de Algoritmos -->
-    <div id="algorithm-container">
-        <!-- Aquí se cargarán los formularios correspondientes -->
-    </div>
-
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
