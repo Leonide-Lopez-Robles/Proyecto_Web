@@ -1,0 +1,172 @@
+/* ===== Estilo General ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuentes modernas y legibles */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background-color: rgb(74, 64, 64); /* Fondo oscuro */
+    color: #ecf0f1; /* Texto claro para un buen contraste con el fondo */
+}
+
+/* ===== Contenedor Principal ===== */
+.container {
+    max-width: 800px; /* Ancho máximo para centrado en pantallas grandes */
+    margin: 20px auto; /* Centra horizontalmente y agrega espacio vertical */
+    padding: 20px; /* Espaciado interno */
+    background: #fff; /* Fondo blanco para resaltar contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    border-radius: 8px; /* Bordes redondeados para un diseño moderno */
+    text-align: center; /* Centra texto dentro del contenedor */
+}
+
+/* ===== Títulos ===== */
+h1 {
+    text-align: center; /* Centra el texto del título */
+    background-color: #2c3e50; /* Fondo azul oscuro */
+    color: #ecf0f1; /* Texto claro */
+    padding: 15px 0; /* Espaciado interno vertical */
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+/* ===== Formulario ===== */
+.form-section {
+    margin-bottom: 20px; /* Espaciado inferior para separar elementos */
+}
+
+label {
+    font-size: 18px; /* Tamaño de texto más grande para claridad */
+    font-weight: bold; /* Resalta etiquetas con negrita */
+    color: #333; /* Texto gris oscuro */
+    margin-right: 15px; /* Espaciado entre etiqueta y campo de entrada */
+    display: inline-block; /* Asegura mejor control de posición */
+}
+
+/* Estilo para operadores como "x1 +" */
+.texto-operador {
+    font-size: 16px; /* Tamaño de texto para operadores */
+    font-weight: bold; /* Resalta operadores */
+    color: #007bff; /* Azul brillante para visibilidad */
+    margin: 0 5px; /* Espaciado horizontal */
+    vertical-align: middle; /* Alinea operadores con los campos */
+}
+
+/* Campos de entrada de números */
+input[type="number"] {
+    width: 60px; /* Ancho fijo */
+    padding: 5px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño del texto */
+    border: 1px solid #1b1a1a; /* Borde oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto ingresado */
+}
+
+/* ===== Botones ===== */
+button {
+    padding: 10px 15px; /* Espaciado interno */
+    margin: 5px; /* Espaciado externo entre botones */
+    background-color: #007bff; /* Fondo azul */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Texto blanco */
+    font-size: 14px; /* Tamaño del texto */
+    cursor: pointer; /* Muestra un cursor tipo mano al pasar */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el cursor */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+button:disabled {
+    background-color: #ccc; /* Fondo gris para botones deshabilitados */
+    cursor: not-allowed; /* Cambia el cursor para mostrar que está deshabilitado */
+}
+
+/* ===== Contenedor de Matriz ===== */
+#matrizContainer {
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* ===== Resultado ===== */
+#resultado {
+    margin-top: 20px; /* Espaciado superior */
+    padding: 10px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Fondo claro */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ddd; /* Borde gris claro */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+/* ===== Historial ===== */
+#historial {
+    margin-top: 20px; /* Espaciado superior */
+    padding: 10px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Fondo claro */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    max-height: 300px; /* Altura máxima con scroll */
+    overflow-y: auto; /* Desplazamiento vertical */
+}
+
+/* Cada elemento del historial */
+.historial-item {
+    margin-bottom: 15px; /* Espacio entre sistemas resueltos */
+    padding: 10px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Título del sistema resuelto */
+.historial-item h3 {
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Resalta con negrita */
+    color: #007bff; /* Azul brillante */
+    margin-bottom: 10px; /* Espaciado debajo del título */
+}
+
+/* Texto de la matriz */
+.historial-item pre {
+    font-size: 14px; /* Tamaño del texto */
+    color: #333; /* Texto gris oscuro */
+    background-color: #f4f4f4; /* Fondo claro */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+}
+
+/* Texto de las soluciones */
+.historial-item p {
+    font-size: 16px; /* Tamaño del texto */
+    color: #444; /* Gris oscuro */
+    margin: 10px 0; /* Espaciado arriba y abajo */
+}
+
+/* ===== Lista de Soluciones ===== */
+.lista-soluciones {
+    list-style-type: none; /* Sin puntos de lista */
+    padding: 0; /* Sin relleno interno */
+    margin: 0; /* Sin márgenes externos */
+}
+
+.solucion-item {
+    font-size: 16px; /* Tamaño del texto */
+    color: #333; /* Gris oscuro */
+    padding: 5px 0; /* Espaciado entre soluciones */
+    border-bottom: 1px solid #ddd; /* Línea separadora */
+}
+
+.solucion-item:last-child {
+    border-bottom: none; /* Elimina línea en el último elemento */
+}
+/* Estilos para el título de las soluciones */
+.resultado-titulo {
+    font-size: 15px; /* Tamaño más grande para destacar */
+    font-weight: bold; /* Negrita para resaltar */
+    color: #007bff; /* Azul brillante */
+    text-align: center; /* Centrado horizontalmente */
+    margin-bottom: 15px; /* Espacio debajo del título */
+    text-transform: uppercase; /* Texto en mayúsculas para impacto */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
