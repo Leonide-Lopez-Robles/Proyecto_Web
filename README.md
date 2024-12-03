@@ -1,4 +1,3 @@
-# Proyecto_Web
 # Proyecto Web: Sistemas de Ecuaciones Lineales
 # Descripción
 Esta aplicación web interactiva permite resolver sistemas de ecuaciones lineales de hasta 10 ecuaciones. Los usuarios pueden generar una tabla para ingresar los coeficientes, resolver el sistema y ver las soluciones y resetear las soluciones para volver a ingresar otro. Además, incluye un historial para consultar sistemas resueltos que son guardados en el almacenamiento local del navegador (LocalStorage). 
