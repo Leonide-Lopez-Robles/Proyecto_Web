@@ -4,7 +4,7 @@ Esta aplicación web interactiva permite resolver sistemas de ecuaciones lineale
 
 # Características
 Generar tablas dinámicas: Según el número de ecuaciones que el usuario elija.
-Resolver sistemas: Calcula y muestra soluciones simuladas de las ecuaciones ingresadas.
+Resolver sistemas: Calcula y muestra solucionadas por elimninacion gaus de las ecuaciones ingresadas.
 Historial: Guarda y permite consultar los sistemas resueltos.
 reinica: Resetea el sistema lineal para poder a hacer ingresar otro sistema  lineal.
 
