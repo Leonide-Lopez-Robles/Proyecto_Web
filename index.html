@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolución de Sistemas de Ecuaciones Lineales</title>
+    <link rel="stylesheet" href="./estilos/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistemas de Ecuaciones Lineales</h1>
+        <div class="form-section">
+            <label for="numEcuaciones">Número de ecuaciones:</label>
+            <input type="number" id="numEcuaciones" min="2" max="10" placeholder="2">
+            <button id="generarMatriz">Generar Matriz</button>
+            <button id="verHistorial">Historial</button>
+        </div>
+        <div id="matrizContainer"></div>
+        <div id="resultado"></div>
+        <div id="botonesAccion" style="display: none;">
+            <button id="resolver">Resolver</button>
+            <button id="reiniciar">Reiniciar</button>
+        </div>
+        <div id="historial" style="display: none;"></div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
